@@ -7,13 +7,22 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.page-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
 .home,
 .services,
-.products,
+.destinations,
 .sign-up {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  color: #fff;
 }
