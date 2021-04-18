@@ -1,14 +1,17 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: transparent;
   height: 80px;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 100;
+}
+
+.navbar.active {
+  background-color: #242424;
 }
 
 .navbar-container {
@@ -79,6 +82,7 @@
 @media screen and (max-width: 900px) {
   .navbar {
     position: relative;
+    background: #242424;
   }
 
   .nav-menu {
@@ -94,7 +98,7 @@
   }
 
   .nav-menu.active {
-    background: #242222;
+    background: #242424;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
