@@ -18,10 +18,6 @@ function Navbar() {
     }
   };
 
-  useEffect(() => {
-    showButton();
-  }, []);
-
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setNavbar(true);
@@ -29,6 +25,10 @@ function Navbar() {
       setNavbar(false);
     }
   };
+
+  useEffect(() => {
+    showButton();
+  }, []);
 
   window.addEventListener('resize', showButton);
   window.addEventListener('scroll', changeBackground);

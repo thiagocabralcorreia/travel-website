@@ -59,12 +59,6 @@ function Footer() {
       </div>
       <section class="social-media">
         <div class="social-media-wrap">
-          <div class="footer-logo">
-            <Link to="/" className="social-logo">
-              <img src="navbar-icon.png" alt="" className="navbar-icon" />
-              TXP
-            </Link>
-          </div>
           <small class="website-rights">TXP © 2021</small>
           <div class="social-icons">
             <Link
