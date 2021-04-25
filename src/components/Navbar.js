@@ -1,17 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import DropdownMenu from './Dropdown';
 import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
   const [button, setButton] = useState(true);
   const [navbar, setNavbar] = useState(false);
 
   const closeMobileMenu = () => setClick(false);
 
+  const onMouseEnter = () => {
+    if (window.innerWidth <= 1000) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth <= 1000) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
   const showButton = () => {
-    if (window.innerWidth <= 900) {
+    if (window.innerWidth <= 1000) {
       setButton(false);
     } else {
       setButton(true);
@@ -67,6 +85,20 @@ function Navbar() {
               >
                 SERVICES
               </Link>
+            </li>
+            <li
+              className="nav-item"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+            >
+              <Link
+                to="/stories"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                STORIES <i className="fas fa-caret-down" />
+              </Link>
+              {dropdown && <DropdownMenu />}
             </li>
             <li>
               <Link

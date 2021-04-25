@@ -16,7 +16,7 @@ function Cards() {
               text="Stunning places where you can get away from the crowds"
             />
             <CardItem
-              path="/destinations"
+              path="/adventure"
               label="Discovery"
               src="images/img-2.jpg"
               text="Dive into the clear crystal clear waters, follow the fantastic marine life up close"
@@ -30,13 +30,13 @@ function Cards() {
               text="Set Sail in blue waters and contemplate epic places"
             />
             <CardItem
-              path="/services"
+              path="/adventure"
               label="Adventure"
               src="images/img-4.jpg"
               text="Venture into landscapes and watch unforgettable sunsets"
             />
             <CardItem
-              path="/services"
+              path="/romance"
               label="Luxury"
               src="images/img-5.jpg"
               text="Hotels and resorts with many advantages beyond comfort"

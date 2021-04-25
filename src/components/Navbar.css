@@ -1,6 +1,6 @@
 .navbar {
   background: transparent;
-  height: 80px;
+  height: 71px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,6 @@
 
 .nav-links:hover {
   border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
 }
 
 .fa-bars {
@@ -79,7 +78,7 @@
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .navbar {
     position: relative;
     background: #242424;
